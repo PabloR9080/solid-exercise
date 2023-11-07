@@ -1,4 +1,5 @@
 import { Move, PokemonData, PokemonStats, Sprites, Stat } from '../dtos/PokemonData'
+import { ResponseDTO } from '../dtos/ResponseDTO'
 
 export const mapToPokemonDto = (pokeApiRes: any): PokemonData => ({
   id: pokeApiRes.id,
