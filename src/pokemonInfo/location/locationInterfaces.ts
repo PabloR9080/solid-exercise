@@ -1,4 +1,4 @@
-export interface CountryInfo{
-    getTopCountriesByFamilies(topNth:number, families: string[]): Promise<string[]>;
+export interface CountryInfo {
+  getTopCountriesByFamilies: (pokemon_id: number, topNth: number) => Promise<string[]>
 }
 

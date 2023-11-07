@@ -1,10 +1,10 @@
-import { ResponseDTO } from "../dtos/ResponseDTO"
-import { mapToPokemonDto } from "./mapToPokemonDataDto"
+import { ResponseDTO } from '../dtos/ResponseDTO'
+import { mapToPokemonDto } from './mapToPokemonDataDto'
 
-export const mapJsonToOutput = (data: any): ResponseDTO => {
-    return {
-      families: [],
-      countries: [],
-      baseInformation: mapToPokemonDto(data),
-    }
+export const mapJsonToOutput = (families: string[], countries: string[], data: any): ResponseDTO => {
+  return {
+    families,
+    countries,
+    baseInformation: data
   }
+}

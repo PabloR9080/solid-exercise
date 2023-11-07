@@ -1,3 +1,5 @@
-export interface MovesInfo{
-    getLatestMoves(topNth: number): Promise<any[]>;
+import { move } from './movesService'
+
+export interface MovesInfo {
+  getLatestMoves: (moves: any[], topNth: number) => move[]
 }
