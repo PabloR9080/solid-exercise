@@ -1,5 +1,6 @@
-import { move } from './movesService'
+import { Move } from '../dtos/PokemonData'
+
 
 export interface MovesInfo {
-  getLatestMoves: (moves: any[], topNth: number) => move[]
+  getLatestMoves: (moves: any[], topNth: number) => Move[]
 }

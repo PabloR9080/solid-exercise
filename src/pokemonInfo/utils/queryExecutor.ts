@@ -1,7 +1,5 @@
 import { runQuery } from '../../db'
 export default class QueryExecutor {
-  constructor() {
-  }
 
   async getPokemonFamily(pokemonId?: number, fields?: string[]): Promise<any[]> {
     if (!pokemonId) return []
